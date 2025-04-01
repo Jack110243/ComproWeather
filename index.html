@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Station | Login</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <section class="main-section">
+    <!-- เมนูนำทาง -->
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000">
+        <span class="WEATHER">WEATHER</span>  STATION</h1>
+      <ul class="nav-links">
+        <!-- <li><a class="active" href="Weather.html">HOME</a></li> -->
+        <!-- <li><a href="https://672c-184-22-32-194.ngrok-free.app/ui/#!/0?socketid=T8bOvL4B3S5Hm66PAAAh">DASHBOARD</a></li> -->
+        <div class="dropdown">
+          <button class="dropbtn">☰</button>
+        <div class="dropdown-content">
+            <a href="index.html">Login</a>
+            <a href="#" onclick="logout()">logout</a>
+        </div>
+    </div>
+      </ul>
+      <!-- ปุ่มเมนูสำหรับมือถือ -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+
+    <!-- ฟอร์มล็อกอิน -->
+      <form class="login-box" onsubmit="return validateLogin()">
+        <h2>Login</h2>
+        <div class="input-box">
+          <i class='bx bx-user'></i>
+          <input type="text" id="username" placeholder="Username">
+        </div>
+        <div class="input-box">
+          <i class='bx bx-lock-alt'></i>
+          <input type="password" id="password" placeholder="Password">
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <p class="register-text">Don't have an account? <a href="#">Sign up</a></p>
+      </form>
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js">  </script>
+  
+
+</body>
+</html>
